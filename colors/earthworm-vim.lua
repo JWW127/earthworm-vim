@@ -12,30 +12,47 @@ local link = function(target, group)
     vim.api.nvim_command('highlight! link ' .. target .. ' '.. group)
 end
 
+
+
 -- core colors
 local lightblue = '#3b94c8' 
+local mediumblue = '#373f7f'
+local navy = '#000167'
 local purple = '#9103ff' 
 local ultraviolet = '#000154' 
-local worm = '#f2b280' 
+local darkpurp = '#09050d'
+local worm = '#cc9779' 
+local mediumworm = '#cb835a'
+local darkworm = '#c0673b'
+local brownorange = '#b24600'
 local lightgray = '#474747' 
--- locations
-local Color0 = '#474747' --comments
-local Color1 = '#500ae8' --icon colors
-local Color2 = '#ffffff' --error stuff
-local Color3 = '#a40000' --local public
-local Color4 = '#f2b280' --strings
+local darkred = '#a40000'
+local brightred = '#b11f1f'
+local mediumyellow = '#d0ad0d'
+local brightyellow = '#fadf00'
+local lavender = '#be77ff'
+local whitegray = '#fefefe' 
+local green = '#1a4c00'
+local snotgreen = '#a5a50d'
+local boogergreen = '#7ace29'
+local suitwhite = '#ffffff'
+
+local Color0 = whitegray --comments
+local Color1 = mediumworm --icon colors
+local Color2 = suitwhite --error stuff
+local Color3 = boogergreen --local public
+local Color4 = worm --strings
 local Color5 = '#ebe100' --Operator
-local Color6 = '#d0ad0d' --function - highlight - link
-local Color7 = '#ffffff' --parens not funcitonin
-local Color8 = '#fadf00' --function args
---local Color9 = '#060a1c' --background
-local Color9 = '#00000' --background
+local Color6 = darkworm --function - highlight - link
+local Color7 = suitwhite --parens not funcitonin
+local Color8 = brightred --args
+local Color9 = darkpurp --background
 local Color10 = '#9593be'
-local Color11 = '#00000c' --CursorLine
-local Color12 = '#ffffff' --gutter number line
+local Color11 = '#1d111b' --cursorline / columns
+local Color12 = snotgreen --gutter number line
 local Color13 = '#c43f91' --tabline
 local Color14 = '#000000' --TabLine
-local Color15 = '#fefefe' --indent char
+local Color15 = lightgray --indent char
 --something
 
 highlight('Comment', nil, Color0, 'italic')
@@ -58,12 +75,12 @@ highlight('WildMenu', Color9, Color10, nil)
 highlight('Pmenu', Color9, Color10, nil)
 highlight('PmenuSel', Color10, Color9, nil)
 highlight('PmenuThumb', Color9, Color10, nil)
-highlight('Normal', Color9, lightblue, nil)
+highlight('Normal', Color9, '#303c89', bold)
 highlight('Visual', purple, ultraviolet, nil)
-highlight('CursorLine', '#be77ff', nil, nil)
-highlight('ColorColumn', Color11, nil, nil)
+highlight('CursorLine', Color11, nil, nil)
+highlight('ColorColumn', nil, nil, nil)
 highlight('SignColumn', Color9, nil, nil)
-highlight('LineNr', nil, Color12, nil)
+highlight('LineNr', nil, Color12, italic)
 highlight('TabLine', Color9, Color13, nil)
 highlight('TabLineSel', Color14, Color9, nil)
 highlight('TabLineFill', Color9, Color13, nil)

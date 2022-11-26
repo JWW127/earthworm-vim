@@ -1,5 +1,6 @@
  <div align="center">
  <h1>EARTHWORM VIM</h1>
+ <img src='./assets/ewj.jpg'>
  </div>
  <hr/>
 
