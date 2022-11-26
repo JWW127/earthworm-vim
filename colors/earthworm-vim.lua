@@ -12,28 +12,31 @@ local link = function(target, group)
     vim.api.nvim_command('highlight! link ' .. target .. ' '.. group)
 end
 
+-- core colors
+local lightblue = '#3b94c8' 
+local purple = '#9103ff' 
+local ultraviolet = '#000154' 
+local worm = '#f2b280' 
+local lightgray = '#474747' 
+-- locations
 local Color0 = '#474747' --comments
-local Color1 = '#9443ff' --icon colors
+local Color1 = '#500ae8' --icon colors
 local Color2 = '#ffffff' --error stuff
 local Color3 = '#a40000' --local public
-local Color4 = '#f2b280'
+local Color4 = '#f2b280' --strings
 local Color5 = '#ebe100' --Operator
 local Color6 = '#d0ad0d' --function - highlight - link
 local Color7 = '#ffffff' --parens not funcitonin
-local Color8 = '#041e93' --function args
+local Color8 = '#fadf00' --function args
 --local Color9 = '#060a1c' --background
-local Color9 = '#00000a' --background
+local Color9 = '#00000' --background
 local Color10 = '#9593be'
 local Color11 = '#00000c' --CursorLine
-local Color12 = '#b03900' --gutter number line
+local Color12 = '#ffffff' --gutter number line
 local Color13 = '#c43f91' --tabline
 local Color14 = '#000000' --TabLine
 local Color15 = '#fefefe' --indent char
 --something
-local alternate1 = '#324084'
-local alternate2 = '#5f08e7'
-local alternate3 = '#9103ff'
-local alternate4 = '#000154'
 
 highlight('Comment', nil, Color0, 'italic')
 highlight('Constant', nil, Color1, nil)
@@ -55,9 +58,9 @@ highlight('WildMenu', Color9, Color10, nil)
 highlight('Pmenu', Color9, Color10, nil)
 highlight('PmenuSel', Color10, Color9, nil)
 highlight('PmenuThumb', Color9, Color10, nil)
-highlight('Normal', Color9, alternate1, nil)
-highlight('Visual', alternate3, alternate4, nil)
-highlight('CursorLine', alternate2, Color5, nil)
+highlight('Normal', Color9, lightblue, nil)
+highlight('Visual', purple, ultraviolet, nil)
+highlight('CursorLine', '#be77ff', nil, nil)
 highlight('ColorColumn', Color11, nil, nil)
 highlight('SignColumn', Color9, nil, nil)
 highlight('LineNr', nil, Color12, nil)
