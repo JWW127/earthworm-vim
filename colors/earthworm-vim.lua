@@ -80,7 +80,7 @@ highlight('TabLineSel', Color14, Color9, nil)
 highlight('TabLineFill', suitwhite, Color13, nil)
 highlight('TSPunctDelimiter', nil, Color10, nil)
 highlight('IndentBlanklineChar',nil, Color15, nil)
-highlight('Cursor', gunred, nil , 'italic')
+highlight('Cursor', boogergreen, nil , 'italic')
 
 link('Conditional', 'Operator')
 link('TSParameterReference', 'TSParameter')
