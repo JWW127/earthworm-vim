@@ -4,25 +4,28 @@
  </div>
  <hr/>
 
-## What is this?
+### What is this?
 
 A Neovim theme based on EARTHWORM JIM the video game.
 
-## Color Palette
+### Color Palette - use this if you want to match your terminal defaults
+<div align="center">
+ <img src='./assets/ewj-palette.png'>
+ </div>
 
-## Notes
-It should mostly work with common plugins treesitter, nerdtree, Conquer of Completion.
+### Notes
+It should mostly work with common plugins treesitter, nerdtree, Conquer of Completion. <br/>
 I included the bg art for aesthetics.
 
-## Possible Future Plans 
-Might add an official Airline | Powerline theme.
+### Possible Future Plans 
+Might add an official Airline | Powerline theme. <br/>
 Light Mode for you sickos.
 
-## Installation
+### Installation
 Just add .config/nvim/colors/ directory to your config, place earthworm-vim.lua file in there.
 
 ```mermaid
-stateDiagram-v2
+stateDiagram
 [*] --> .config/
 .config/ --> nvim/
 nvim/ --> colors/
