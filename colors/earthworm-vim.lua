@@ -13,19 +13,19 @@ local link = function(target, group)
 end
 
 -- core colors
-local suitlightblue = '#3b94c8' 
+local suitlightblue = '#3b94c8'
 local suitdarkblue = '#0A0D1C'
-local galaxypurple = '#9103ff' 
+local galaxypurple = '#9103ff'
 local xray = '#000154' 
 local darkpurp = '#09050d'
-local worm = '#d9b19a' 
+local worm = '#d9b19a'
 local mediumworm = '#cb835a'
 local darkworm = '#c0673b'
 local gunred = '#a40000'
 local chickenyellow = '#d0ad0d'
 local shockyellow = '#fadf00'
 local spacelavender = '#be77ff'
-local cowwhite = '#F3F4EE' 
+local cowwhite = '#F3F4EE'
 local green = '#1a4c00'
 local snotgreen = '#a5a50d'
 local boogergreen = '#7ace29'
@@ -74,7 +74,7 @@ highlight('Visual', galaxypurple, xray, nil)
 highlight('CursorLine', Color11, nil, nil)
 highlight('ColorColumn', suitwhite, nil, nil)
 highlight('SignColumn', Color9, nil, nil)
-highlight('LineNr', nil, Color12, italic)
+highlight('LineNr', nil, Color12, 'italic')
 highlight('TabLine', Color9, Color13, nil)
 highlight('TabLineSel', Color14, Color9, nil)
 highlight('TabLineFill', suitwhite, Color13, nil)
